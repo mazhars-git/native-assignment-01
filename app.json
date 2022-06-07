@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "native-assignment-01",
+    "slug": "native-assignment-01",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
