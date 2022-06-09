@@ -5,7 +5,7 @@ import { colors } from '../theme/colors'
 export default function Home() {
   return (
     <View style = {styles.container}>
-      <Text>Covid-19</Text>
+      <Text style={{color: colors.white}}>Covid-19</Text>
       <Pressable>
           <View>
 
@@ -28,5 +28,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.blue,
     height: 100,
     color: colors.white,
+    borderBottomEndRadius: 20,
+    borderBottomLeftRadius: 20,
+    padding: 10,
   }
 })
