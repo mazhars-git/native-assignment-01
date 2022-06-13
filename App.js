@@ -27,6 +27,7 @@ export default function App() {
     <SafeAreaView>
         <Header />
         <Home />
+        <Text style={{ fontSize: 30, fontFamily: 'Roboto-Bold'}}>font check</Text>
     </SafeAreaView>
   );
 }
