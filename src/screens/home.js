@@ -2,17 +2,20 @@ import { View, Pressable, StyleSheet } from 'react-native'
 import React from 'react'
 import { colors } from '../theme/colors'
 import Text from '../components/text/text'
+import { spacing } from './../theme/spacing';
 
 export default function Home() {
   return (
     <View style = {styles.container}>
-      <Text style={{color: colors.white}}>Covid-19</Text>
-      <Pressable>
-          <View>
+      <View style = {styles.top}>
+        <Text preset="h1">Covid-19</Text>
+        <Pressable>
+            <View>
 
-              <Text>USA</Text>
-          </View>
-      </Pressable>
+                <Text>USA</Text>
+            </View>
+        </Pressable>
+      </View>
 
       <View>
           <Text>Are you feeling sick?</Text>
@@ -27,10 +30,15 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.blue,
-    height: 100,
     color: colors.white,
     borderBottomEndRadius: 20,
     borderBottomLeftRadius: 20,
-    padding: 10,
+    padding: spacing[5],
+  },
+  
+  top: {
+    flex: 1,
+    justifyContent: 'space-around'
+    
   }
 })
