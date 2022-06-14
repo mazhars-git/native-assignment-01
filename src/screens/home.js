@@ -37,8 +37,8 @@ const styles = StyleSheet.create({
   },
   
   top: {
-    flex: 1,
-    justifyContent: 'space-around'
+    flexDirection: 'row',
+    justifyContent: 'space-between'
     
   }
 })
