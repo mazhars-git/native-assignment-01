@@ -1,6 +1,7 @@
-import { View, Text, Pressable, StyleSheet } from 'react-native'
+import { View, Pressable, StyleSheet } from 'react-native'
 import React from 'react'
 import { colors } from '../theme/colors'
+import Text from '../components/text/text'
 
 export default function Home() {
   return (
