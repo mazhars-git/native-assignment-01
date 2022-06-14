@@ -1,8 +1,9 @@
-import { View, Pressable, StyleSheet } from 'react-native'
+import { View, Pressable, StyleSheet, Image } from 'react-native'
 import React from 'react'
 import { colors } from '../theme/colors'
 import Text from '../components/text/text'
 import { spacing } from './../theme/spacing';
+import { AntDesign } from '@expo/vector-icons';
 
 export default function Home() {
   return (
@@ -10,9 +11,10 @@ export default function Home() {
       <View style = {styles.top}>
         <Text preset="h1">Covid-19</Text>
         <Pressable>
-            <View>
-
+            <View style= {styles.usaBtn}>
+                <Image style={{resizeMode: 'contain'}} source = {require("../../image/usa flag.png")} />
                 <Text>USA</Text>
+                <AntDesign name="caretdown" size={10} color="black" />
             </View>
         </Pressable>
       </View>
@@ -30,7 +32,6 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.blue,
-    color: colors.white,
     borderBottomEndRadius: 20,
     borderBottomLeftRadius: 20,
     padding: spacing[5],
@@ -39,6 +40,13 @@ const styles = StyleSheet.create({
   top: {
     flexDirection: 'row',
     justifyContent: 'space-between'
-    
-  }
+  },
+
+  usaBtn: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: colors.white,
+    padding: spacing[4],
+    borderRadius: 30,
+  },
 })

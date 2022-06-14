@@ -7,6 +7,7 @@ import { colors } from './src/theme/colors';
 import Home from './src/screens/home';
 import { useFonts } from 'expo-font';
 import Header from './src/components/header/header';
+import Prevention from './src/screens/prevention';
 
 
 // const Stack = createNativeStackNavigator();
@@ -27,6 +28,7 @@ export default function App() {
     <SafeAreaView>
         <Header />
         <Home />
+        <Prevention />
         <Text style={{ fontSize: 30, fontFamily: 'Roboto-Bold'}}>font check</Text>
     </SafeAreaView>
   );
