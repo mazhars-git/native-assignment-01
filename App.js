@@ -8,6 +8,7 @@ import Home from './src/screens/home';
 import { useFonts } from 'expo-font';
 import Header from './src/components/header/header';
 import Prevention from './src/screens/prevention';
+import Test from './src/screens/test';
 
 
 // const Stack = createNativeStackNavigator();
@@ -29,6 +30,7 @@ export default function App() {
         <Header />
         <Home />
         <Prevention />
+        <Test />
     </SafeAreaView>
   );
 }
