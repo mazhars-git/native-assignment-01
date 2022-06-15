@@ -10,16 +10,15 @@ export default function Home() {
     <View style = {styles.container}>
       <View style = {styles.top}>
         <Text preset="h1">Covid-19</Text>
-        <Pressable>
-            <View style= {styles.usaBtn}>
-                <View>
-                <Image source = {require("../image/usa flag.png")} />
-                </View>
+        <View style= {styles.usaBtn}>
+               
+                <Image style={{height: 10, width: 10}} source = {require("../image/usa flag.png")} />
+               
 
                 <Text style={{color: colors.black}}>USA</Text>
                 <AntDesign name="caretdown" size={10} color="black" />
-            </View>
-        </Pressable>
+           
+        </View>
       </View>
     
       <View>
@@ -27,13 +26,13 @@ export default function Home() {
           <Text>If you feel sick with any of covid-19 symptoms please call or SMS us immediately for help.</Text>
       </View>
 
-      <View>
-          <Pressable>
+      <View style={styles.btnBox}>
+          <Pressable style={styles.btn}>
               <Ionicons name="call" size={24} color= {colors.white} />
               <Text>Call Now</Text>
           </Pressable>
 
-          <Pressable>
+          <Pressable style={styles.btn}>
               <AntDesign name="message1" size={24} color={colors.white} />
               <Text>Send SMS</Text>
           </Pressable>
@@ -65,4 +64,19 @@ const styles = StyleSheet.create({
     padding: spacing[4],
     borderRadius: 30,
   },
+
+  btnBox: {
+    marginTop: spacing[4],
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  btn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    backgroundColor: colors.red,
+    borderRadius: 30,
+    padding: spacing[4],
+  }
 })
