@@ -29,10 +29,12 @@ export const presets = {
   h2: {
       ...BOLD,
       fontSize: 28,
+      
   },
   h3: {
       ...BASE_BOLD,
       fontSize: 24,
+      color: colors.black,
   },
   h4: {
       ...BASE_BOLD,

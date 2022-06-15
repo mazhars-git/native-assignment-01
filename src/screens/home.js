@@ -28,13 +28,13 @@ export default function Home() {
 
       <View style={styles.btnBox}>
           <Pressable style={styles.btn}>
-              <Ionicons name="call" size={24} color= {colors.white} />
-              <Text>Call Now</Text>
+              <Ionicons name="call" size={20} color= {colors.white} />
+              <Text style={{marginLeft: spacing[2]}}>Call Now</Text>
           </Pressable>
 
-          <Pressable style={styles.btn}>
-              <AntDesign name="message1" size={24} color={colors.white} />
-              <Text>Send SMS</Text>
+          <Pressable style={styles.btn2}>
+              <AntDesign name="message1" size={20} color={colors.white} />
+              <Text style={{marginLeft: spacing[2]}}>Send SMS</Text>
           </Pressable>
       </View>
 
@@ -78,5 +78,13 @@ const styles = StyleSheet.create({
     backgroundColor: colors.red,
     borderRadius: 30,
     padding: spacing[4],
-  }
+  },
+  btn2: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    backgroundColor: colors.lightBlue,
+    borderRadius: 30,
+    padding: spacing[4],
+  },
 })
