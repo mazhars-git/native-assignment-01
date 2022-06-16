@@ -1,13 +1,14 @@
 import { View, StyleSheet } from 'react-native'
 import React from 'react'
-import { SimpleLineIcons } from '@expo/vector-icons';
+import { SimpleLineIcons, Ionicons } from '@expo/vector-icons';
 import { colors } from './../../theme/colors';
 import { spacing } from './../../theme/spacing';
 
 export default function Header() {
   return (
     <View style = {styles.container}>
-      <SimpleLineIcons name="menu" size={24} color="white" />
+      <SimpleLineIcons style={{cursor: 'pointer'}} name="menu" size={24} color="white" />
+      <Ionicons style={{cursor: 'pointer'}} name="ios-notifications-outline" size={24} color="white" />
     </View>
   )
 }
@@ -16,7 +17,9 @@ export default function Header() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.blue,
-    padding: spacing[5]
-
+    padding: spacing[5],
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+   
   }
 })
