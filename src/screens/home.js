@@ -12,18 +12,27 @@ export default function Home() {
         <Text preset="h1">Covid-19</Text>
         <View style= {styles.usaBtn}>
                
-                <Image style={{height: 10, width: 10}} source = {require("../image/usa flag.png")} />
-               
-
-                <Text style={{color: colors.black}}>USA</Text>
+                <Image style={{height: 20, width: 20, borderRadius: 50}} source = {require("../image/usa flag.png")} />
+                <Text preset="h4" style={{color: colors.black, marginLeft: 5, marginRight: 5 }}>USA</Text>
                 <AntDesign name="caretdown" size={10} color="black" />
            
         </View>
       </View>
     
-      <View>
-          <Text>Are you feeling sick?</Text>
-          <Text>If you feel sick with any of covid-19 symptoms please call or SMS us immediately for help.</Text>
+      <View style={{marginTop: 20}}>
+          <Text preset="h2">Are you feeling sick?</Text>
+          <Text 
+            style=
+            {{
+              marginTop: 15, 
+              marginBottom: 15, 
+              fontSize: 33,
+              fontWeight: 100
+              
+            }}
+          >
+            If you feel sick with any of covid-19 symptoms please call or SMS us immediately for help.
+          </Text>
       </View>
 
       <View style={styles.btnBox}>
@@ -49,6 +58,7 @@ const styles = StyleSheet.create({
     borderBottomEndRadius: 20,
     borderBottomLeftRadius: 20,
     padding: spacing[5],
+    
   },
   
   top: {
