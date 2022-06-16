@@ -9,12 +9,12 @@ export default function Test() {
   return (
     <View style = {styles.container}>
         <View style = {styles.contentBox}>
-            <View>
+            
                 <Image style={{height: 100, width: 100}}  source={require("../image/do test.png")} />
-            </View>
+            
             <View>
-                <Text>Do your test!</Text>
-                <Text>Follow the instructions to do your own test</Text>
+                <Text preset="h2">Do your own test!</Text>
+                <Text style={{fontSize: 20}}>Follow the instructions to do your own test</Text>
             </View>
         </View>
     </View>

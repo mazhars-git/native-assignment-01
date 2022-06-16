@@ -10,15 +10,15 @@ export default function Prevention() {
       <Text preset="h3" style={{color: 'black', margin: 20}}>Prevention</Text>
 
       <View style={styles.preventionImg}>
-        <View >
+        <View style={styles.content} >
           <Image style={{height: 100, width: 100}}  source={require("../image/distance.png")}/>
           <Text preset="h4" style={{color: colors.black}}>Avoid Close Contact</Text>
         </View>
-        <View>
+        <View style={styles.content}>
           <Image style={{height: 100, width: 100}}  source={require("../image/washing hand.png")}/>
-          <Text preset="h4" style={{color: colors.black}}>Clean Your Hands Often</Text>
+          <Text preset="h4" style={{color: colors.black }}>Clean Your Hands Often</Text>
         </View>
-        <View>
+        <View style={styles.content}>
           <Image style={{height: 100, width: 100}}  source={require("../image/wear mask.png")}/>
           <Text preset="h4" style={{color: colors.black}}>Wear a facemask</Text>
         </View>
@@ -35,6 +35,10 @@ const styles = StyleSheet.create({
   preventionImg: {
     flexDirection: 'row',
     justifyContent: 'space-around',
+  },
+  content: {
+    display: 'flex', 
+    alignItems: 'center'
   }
 
 })
